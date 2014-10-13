@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="lwc" location="225,10" size="280,455">
+    <action name="AuthorAction" location="65,106" size="150,83">
+      <result name="SUCCESS">
+        <resourceEdge source="SUCCESS" routing="0" target="index.jsp" />
+      </result>
+      <result name="ADD">
+        <resourceEdge source="ADD" routing="0" target="index.jsp" />
+      </result>
+      <result name="ERROR">
+        <resourceEdge source="ERROR" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="BookAction" location="65,271" size="150,104">
+      <result name="ERROR">
+        <resourceEdge source="ERROR" routing="0" target="error.jsp" />
+      </result>
+      <result name="ADD">
+        <resourceEdge source="ADD" routing="0" target="index.jsp" />
+      </result>
+      <result name="SHOW">
+        <resourceEdge source="SHOW" routing="0" target="showall.jsp" />
+      </result>
+      <result name="DELETE">
+        <resourceEdge source="DELETE" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="index.jsp" location="10,122" size="150,55" />
+  <webResource name="error.jsp" path="error.jsp" location="570,297" size="150,55" />
+  <webResource name="showall.jsp" path="showall.jsp" location="290,507" size="150,55" />
+  <include file="struts-default.xml" location="10,625" size="150,30" />
+</Struts2Diagram>
+
