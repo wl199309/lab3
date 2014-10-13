@@ -19,6 +19,12 @@ public class Book {
 	public String getTitle(){
 		return Title;
 	}
+	public String getISBN(){
+		return ISBN;
+	}
+	public void setISBN(String ISBN){
+		 this.ISBN = ISBN;
+	}
 	public void setTitle(String Title){
 		this.Title = Title;
 	}

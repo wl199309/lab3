@@ -8,12 +8,7 @@ public class AuthorAction extends ActionSupport{
 
 	private DBConnection DBC =new DBConnection();
 	private Author author;
-	public Author getAuthor(){
-		return author;
-	}
-	public void setAuthor(Author author){
-		this.author = author;
-	}
+	
 	
 	public String Add(){
 		String sql = "INSERT INTO[Author](Name,Age,Country) VALUES('"+author.getName()+"','"+author.getAge()+"','"+author.getCountry()+"')";

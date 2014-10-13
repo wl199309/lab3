@@ -7,8 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import com.opensymphony.xwork2.ActionSupport;
-import com.sun.org.apache.bcel.internal.generic.NEW;
+
 public class BookAction extends ActionSupport{
 	private DBConnection DBC =new DBConnection();
 	private Book book;
